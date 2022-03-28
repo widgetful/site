@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>{{ title }}</title>
-    <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
-    {% endif %}
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <meta name="generator" content="Eleventy" />
 
-    <link rel="stylesheet" href="/{{ hash['css/styles.css'] }}"/>
-    <script defer src="/{{ hash['js/scripts.js'] }}"></script>
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8" />
+  {% if description %}
+  <meta name="description"
+        content="{{description}}" />
+  {% endif %}
+  <meta http-equiv="x-ua-compatible"
+        content="ie=edge" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+  <meta name="generator"
+        content="Eleventy" />
 
-    {% block head %}{% endblock %}
-  </head>
-  <body class="antialiased">
-    {% block content %}
+  <link rel="stylesheet"
+        href="/{{ hash['css/styles.css'] }}" />
+  <script defer
+          src="/{{ hash['js/scripts.js'] }}"></script>
+
+  {% block head %}{% endblock %}
+</head>
+
+<body class="antialiased text-slate-500 dark:text-slate-400 bg-white">
+  {% include "partials/navbar.njk" %}
+  {% block content %}
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
       {{ content | safe }}
-    {% endblock %}
-  </body>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
 </html>
