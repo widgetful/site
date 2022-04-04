@@ -8,25 +8,25 @@ layout: layouts/base.njk
     <div class="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
       <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
         <defs>
-          <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
+        <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+        </pattern>
         </defs>
         <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
       </svg>
       <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
         <defs>
-          <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
+        <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+        </pattern>
         </defs>
         <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
       </svg>
       <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
         <defs>
-          <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-          </pattern>
+        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+        </pattern>
         </defs>
         <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
       </svg>
@@ -35,8 +35,8 @@ layout: layouts/base.njk
   <div class="relative px-4 sm:px-6 lg:px-8">
     <div class="text-lg max-w-prose mx-auto">
       <h1>
-        <span class="block text-base text-center text-blue-600 font-semibold tracking-wide uppercase">Introducing</span>
-        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Bubbles.js</span>
+      <span class="block text-base text-center text-blue-600 font-semibold tracking-wide uppercase">Introducing</span>
+      <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Bubbles.js</span>
       </h1>
       <p class="mt-4 text-xl text-gray-500 leading-8">Bubbles.js is an open source JavaScript library to create and display widgets that users can trigger. Build chat bubbles, help prompts, and more on top of Bubble.</p>
     </div>
@@ -53,46 +53,48 @@ layout: layouts/base.njk
           </li>
         </ol>
 
-        <h3 id="without-build-tools" class="text-md font-semibold">1. Using Bubbles.js directly without build tools</h3>
-
-        <ol class="relative space-y-2">
-          <li>
-            <h4
-                class="text-md leading-6 text-slate-900 font-semibold my-3">
-              Add bubble.js to the <span class="font-mono bg-gray-100 p-1 rounded">&#60;head&#62;</span> section</h4>
-            <div
-                class="relative z-10 col-span-3 bg-neutral-800 rounded-md shadow-lg mb-4">
-              <div class="relative">
-                <pre class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto">
-                  <code class="flex-none min-w-full p-6"><span class="opacity-50">&#60;head&#62;</span>
-<span class="font-semibold">&#60;script src="https://unpkg.com/bubbles.js" defer&#62;&#60;/script&#62;</span>
-<span class="opacity-50">&#60;/head&#62;</span>
-</code>
-                </pre>
-              </div>
+        <div class="my-10">
+          <h3 id="without-build-tools" class="text-md font-semibold">1. Using Bubbles.js directly without build tools</h3>
+          <div class="pl-4 border-l-4">
+            <h4 class="text-md leading-6 text-slate-900 font-semibold my-3">
+              Add bubble.js to the <span class="font-mono bg-gray-100 p-1 rounded">&#60;head&#62;</span> section
+            </h4>
+            <div class="relative z-10 col-span-3 bg-neutral-800 rounded-md shadow-lg mb-4">
+{% highlight "html" %}
+<head>
+  <script src="https://unpkg.com/bubbles.js" defer></script>
+</head>
+{% endhighlight %}
             </div>
-          </li>
-          <li>
             <h4 class="text-md leading-6 text-slate-900 font-semibold my-3">Initialize your bubble</h4>
-            <div
-                class="relative z-10 col-span-3 bg-neutral-800 rounded-md shadow-lg mb-4">
-              <div class="relative">
-                <pre class="text-sm leading-6 text-slate-50 flex ligatures-none overflow-auto">
-                  <code class="flex-none min-w-full p-6"><span class="opacity-50">&#60;script&#62;</span>
-<span class="font-semibold">window.bubble = Bubble.init()</span>
-<span class="opacity-50">&#60;/script&#62;</span>
-</code>
-                </pre>
-              </div>
+            <div class="relative z-10 col-span-3 bg-neutral-800 rounded-md shadow-lg mb-4">
+{% highlight "html" %}
+<script>
+  window.bubble = Bubble.init()
+</script>
+{% endhighlight %}
             </div>
-          </li>
-        </ol>
+          </div>
+        </div>
 
-        <h3 id="with-build-tools-es-modules" class="text-md font-semibold">2. Using Bubbles with build tools via ES modules</h3>
+        <div class="my-10">
+          <h3 id="with-build-tools-es-modules" class="text-md font-semibold">2. Using Bubbles with build tools via ES modules</h3>
+          <div class="pl-4 border-l-4">
+            <h4 class="text-md leading-6 text-slate-900 font-semibold my-3">
+              Using npm, run the following in your project's root path
+            </h4>
+            <div class="relative z-10 col-span-3 bg-neutral-800 rounded-md shadow-lg mb-4">
+{% highlight "shell" %}npm i bubblejs --save{% endhighlight %}
+            </div>
 
-        <p>Coming soon...</p>
+            <h4 class="text-md leading-6 text-slate-900 font-semibold my-3">Import bubblejs into your project</h4>
+            <div class="relative z-10 col-span-3 bg-neutral-800 rounded-md shadow-lg mb-4">
+{% highlight "js" %}import * as FilePond from 'filepond';
+import 'filepond/dist/filepond.min.css';{% endhighlight %}
+            </div>
+          </div>
+        </div>
       </div>
-
       <div class="my-8 leading-loose">
         <h2 class="text-xl mb-4 font-semibold text-blue-700">What can I use Bubbles.js for?</h2>
         <p>Bubbles.js provides a great starting point to build your next JavaScript web widget, such as:</p>
@@ -104,7 +106,6 @@ layout: layouts/base.njk
           <li>Popup contact form</li>
         </ul>
       </div>
-
       <div class="mt-8 leading-loose">
         <h2 class="text-xl mb-4 font-semibold text-blue-700">What is the license of Bubbles.js?</h2>
         <p class="mb-4">Bubbles.js, the core library, provides a MIT License.</p>

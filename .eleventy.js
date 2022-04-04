@@ -1,5 +1,6 @@
 const htmlmin = require("html-minifier");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   /**
@@ -7,6 +8,7 @@ module.exports = function (eleventyConfig) {
    * Uncomment if you need help upgrading to new major version.
    */
   //eleventyConfig.addPlugin(UpgradeHelper);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   /**
    * Files to copy

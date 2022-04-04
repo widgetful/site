@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@11ty/eleventy-upgrade-help": "^1.0.1",
     "alpinejs": "^3.0.6",
     "autoprefixer": "^10.4.0",
