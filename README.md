@@ -1,6 +1,6 @@
-# Widgetful Project Website
+# Widgetful Site
 
-The Widgetful website was originally forked from [YATAS (Yet Another Tailwind Alpine Starter)](https://yatas.netlify.app/).
+The Widgetful website was originally forked from [YATAS (Yet Another Tailwind Alpine Starter)](https://yatas.netlify.app/). The Widgetful site is hosted at [https://widgetful.com](https://widgetful.com).
 
 ## Development
 
