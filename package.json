@@ -1,7 +1,7 @@
 {
-  "name": "yatas",
-  "version": "1.0.0",
-  "description": "Yet Another Tailwind Apline Starter",
+  "name": "widgetful-site",
+  "version": "0.0.1",
+  "description": "Widgetful Site",
   "scripts": {
     "clean": "del _site",
     "watch-css": "npx tailwindcss -i ./assets/css/styles.css -o ./_site/css/styles.css -w",
@@ -12,12 +12,11 @@
     "build": "NODE_ENV=production concurrently \"npm:build-*\" && node hash && ELEVENTY_ENV=production eleventy"
   },
   "keywords": [
-    "eleventy",
-    "starter",
+    "widgetful",
     "TailwindCSS",
     "Alpine.js"
   ],
-  "author": "Yann Haefliger<hello@needbrainz.com>",
+  "author": "Simon Chiu <simon@furvur.com>",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
@@ -32,8 +31,5 @@
     "md5": "^2.3.0",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.7"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-pro": "^6.1.1"
   }
 }
