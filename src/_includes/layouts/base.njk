@@ -29,13 +29,8 @@
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white">
   {% include "partials/navbar.njk" %}
   {% block content %}
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mx-auto">
-      {{ content | safe }}
-    </div>
-  </div>
+  {{ content | safe }}
   {% endblock %}
-  {% include "partials/footer.njk" %}
 </body>
 
 </html>
